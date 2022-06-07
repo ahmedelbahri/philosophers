@@ -60,7 +60,7 @@ void	ft_routine(t_data *data)
 		if (data->num_of_times)
 			data->n_meals++;
 		if (data->num_of_times && data->num_of_times <= data->n_meals)
-			break ;
+			exit(0);
 		ft_print(data, 3);
 		usleep(data->time_to_sleep * 1000);
 		ft_print(data, 4);
