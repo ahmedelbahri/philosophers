@@ -53,7 +53,7 @@ void	ft_patrol(t_data *data)
 	while (1)
 	{
 		waitpid(-1, &data->status, 0);
-		if (data->status != 0)
+		if (data->status == 0 || data->status == 1)
 		{
 			killall(data);
 			break ;
